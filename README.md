@@ -2,18 +2,27 @@
 
 A Machine Learning web application that predicts whether an employee is financially healthy based on salary, savings, expenditures, EMI burden, and other financial indicators.
 
-Built using:
+## 🚀 Live Demo
+
+🔗 Streamlit App:  
+https://koshpal-njnr6zrwlucf6svpsucakw.streamlit.app/
+
+---
+
+# 📌 Built Using
+
 - Python
 - Logistic Regression
 - Scikit-learn
 - Streamlit
 - Pandas
+- NumPy
 - Seaborn
 - Matplotlib
 
 ---
 
-# Project Objective
+# 🎯 Project Objective
 
 The objective of this project is to analyze employee financial behavior and predict financial wellness using machine learning techniques.
 
@@ -26,12 +35,12 @@ The system evaluates:
 
 to classify employees as:
 
-- Financially Healthy
-- Financially Unhealthy
+✅ Financially Healthy  
+❌ Financially Unhealthy
 
 ---
 
-# Dataset Information
+# 📊 Dataset Information
 
 The dataset contains employee financial information such as:
 
@@ -52,18 +61,21 @@ The dataset was enhanced with:
 - employee names and IDs
 - engineered financial indicators
 
-Final dataset size:
+### Final Dataset Size
 - 10,000 employee records
 
 ---
 
-# Exploratory Data Analysis (EDA)
+# 📈 Exploratory Data Analysis (EDA)
 
 Several visualizations were performed to understand financial relationships and employee behavior.
 
-## Correlation Heatmap
+---
+
+## 🔥 Correlation Heatmap
 
 Correlation heatmaps revealed strong relationships between:
+
 - Monthly Salary and Profit
 - Monthly Salary and Net Salary
 - EMI Burden and Financial Health
@@ -75,9 +87,10 @@ Higher expenditures and EMI burdens negatively affect employee financial wellnes
 
 ---
 
-## Boxplots
+## 📦 Boxplots
 
 Boxplots were used to detect outliers in:
+
 - Monthly Salary
 - Profit
 - Savings Amount
@@ -89,7 +102,7 @@ The dataset showed balanced financial distributions with minimal extreme outlier
 
 ---
 
-## Scatterplots
+## 📉 Scatterplots
 
 Scatterplots helped analyze relationships between financial variables.
 
@@ -109,31 +122,40 @@ A negative relationship was observed:
 
 ---
 
-# Feature Engineering
+# ⚙️ Feature Engineering
 
 Several meaningful financial indicators were engineered from raw financial data.
 
+---
+
 ## Savings Ratio
 
+```text
 Savings Ratio = Savings Amount / Monthly Salary
+```
 
 ---
 
 ## Expense Ratio
 
+```text
 Expense Ratio = Total Expenditure / Monthly Salary
+```
 
 ---
 
 ## EMI Burden
 
+```text
 EMI Burden = EMI or Loan Payment / Monthly Salary
+```
 
 ---
 
 ## Financial Health Score
 
 A custom financial health score was created using:
+
 - profit
 - savings
 - investments
@@ -141,16 +163,19 @@ A custom financial health score was created using:
 - expenditure
 
 This score was later converted into a binary classification target variable:
+
 - 1 → Financially Healthy
 - 0 → Financially Unhealthy
 
 ---
 
-# Machine Learning Model
+# 🤖 Machine Learning Model
 
 ## Model Used
 
 - Logistic Regression
+
+---
 
 ## Preprocessing Steps
 
@@ -161,15 +186,17 @@ This score was later converted into a binary classification target variable:
 
 ---
 
-# Model Performance
+# 📊 Model Performance
 
-## Accuracy
+## ✅ Accuracy
 
+```text
 91.65%
+```
 
 ---
 
-## Classification Report
+## 📋 Classification Report
 
 | Class | Precision | Recall | F1-Score |
 |------|------------|---------|----------|
@@ -178,14 +205,16 @@ This score was later converted into a binary classification target variable:
 
 ---
 
-## Confusion Matrix
+## 🔲 Confusion Matrix
 
 ```text
 [[939  86]
  [ 81 894]]
 ```
 
-### Interpretation
+---
+
+## 📌 Interpretation
 
 - The model demonstrates strong predictive performance.
 - Both financially healthy and unhealthy classes are predicted with balanced precision and recall.
@@ -193,15 +222,18 @@ This score was later converted into a binary classification target variable:
 
 ---
 
-# Streamlit Web Application
+# 🌐 Streamlit Web Application
 
 A Streamlit interface was developed to:
+
 - collect employee financial inputs
 - calculate financial indicators automatically
 - predict employee financial health
 - display confidence score and financial summary
 
-## User Inputs
+---
+
+## 🧾 User Inputs
 
 - Monthly Salary
 - Savings
@@ -212,7 +244,7 @@ A Streamlit interface was developed to:
 
 ---
 
-# Technologies Used
+# 🛠️ Technologies Used
 
 - Python
 - Pandas
@@ -224,7 +256,7 @@ A Streamlit interface was developed to:
 
 ---
 
-# How to Run the Project
+# ▶️ How to Run the Project
 
 ## Install Dependencies
 
@@ -242,7 +274,7 @@ streamlit run app.py
 
 ---
 
-# Project Structure
+# 📂 Project Structure
 
 ```text
 employee-financial-health-predictor/
@@ -256,21 +288,22 @@ employee-financial-health-predictor/
 
 ---
 
-# Future Improvements
+# 🚀 Future Improvements
 
 Possible future enhancements:
+
 - XGBoost / Random Forest models
 - SHAP explainability
-- interactive dashboards
-- cloud database integration
+- Interactive dashboards
+- Cloud database integration
 - PDF financial reports
-- user authentication
-- deployment with Docker and AWS
+- User authentication
+- Deployment using Docker and AWS
 
 ---
 
-# Conclusion
+# 🏁 Conclusion
 
 This project successfully demonstrates how machine learning can be applied to analyze employee financial wellness using salary, expenditure, savings, and EMI-related indicators.
 
-The Logistic Regression model achieved strong predictive performance with approximately 92% accuracy and provides a practical framework for employee financial health assessment.
+The Logistic Regression model achieved strong predictive performance with approximately **92% accuracy** and provides a practical framework for employee financial health assessment.
